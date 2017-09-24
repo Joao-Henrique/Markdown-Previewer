@@ -2,7 +2,9 @@
   "name": "markdown-previewer",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://joao-henrique.github.io/Markdown-Previewer/",
   "dependencies": {
+    "gh-pages": "^1.0.0",
     "marked": "^0.3.6",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.3",
@@ -11,10 +13,11 @@
   },
   
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "homepage": "https://joao-henrique.github.io/Markdown-Previewer/"
+    "eject": "react-scripts eject"
   }
 }
